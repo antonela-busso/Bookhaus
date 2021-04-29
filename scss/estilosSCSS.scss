@@ -1,0 +1,574 @@
+$colorBookhausRosa: rgb(252, 166, 181);
+$colorBookhausAzul: rgb(7, 57, 101);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+p{
+    color: $colorBookhausAzul;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-weight: 500px;
+}
+
+
+.container-fluid{
+    margin: 0;
+    padding: 0;  
+}
+
+.select{
+    width: 120px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#estiloInfo{
+    color: $colorBookhausAzul;
+    text-align: left;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:$colorBookhausRosa;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
+img{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+
+.fieldset{
+    color: $colorBookhausAzul;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.form-check-input{
+    border-color: $colorBookhausRosa;
+}
+
+.form-check-input:checked{
+    background-color: $colorBookhausRosa;
+    border-color: $colorBookhausRosa;
+}
+
+.form-check-input:focus{
+    box-shadow: none;
+    border-color: $colorBookhausRosa;
+}
+
+.form-control{
+    border-color: $colorBookhausRosa;
+    border-radius: .50rem;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    color: $colorBookhausAzul;
+}
+
+.form-control:focus{
+    @extend .form-control;
+    box-shadow:none;
+    font-weight: bold;
+}
+
+#buttonForm{
+    color: $colorBookhausAzul;
+    background-color: $colorBookhausRosa;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 0;
+    align-items: center;
+}
+
+#buttonForm:hover{
+    opacity: 80%;
+    background-color:  rgb(252, 166, 181);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    border: 0;
+}
+
+.carousel-inner img{
+    width: 100%;
+    max-height: 650px;
+    
+}
+
+#carouselExampleControls{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+} 
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-color: rgb(252, 166, 181);
+    border-radius: 80px;
+} 
+
+#iconosRedes{
+    font-size: 25px;
+    color: $colorBookhausAzul;
+    margin-top: 100px;
+    
+}
+
+.imagenCero{
+    margin-left: 0;
+    border-radius: 7px;
+}
+
+#cartas{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    
+}
+#justificado{
+    justify-content: space-evenly;
+}
+.card{
+    border: solid 1px;
+    color: $colorBookhausAzul;
+    border-radius: 7px;
+    display: flex;    
+}
+
+
+#cartasEstilo{  
+    padding: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.card-body{
+    color: $colorBookhausAzul;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border: solid 1px;
+    margin-top: 0;
+    color: $colorBookhausAzul;
+    border-radius: 7px;
+    margin-top: 5px;
+    background-color: $colorBookhausRosa;
+
+}
+
+
+.card-text{
+    text-align: center;
+    color: $colorBookhausAzul;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#btn{
+    display: flex;
+    color: white;
+    background-color: $colorBookhausAzul;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 30px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#btn:hover{
+    opacity: 80%;
+    background-color: $colorBookhausAzul;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 16px;
+    border: 0;
+    
+}
+
+#btn:focus{
+    box-shadow: none;
+    border-color: rgb(252, 166, 181);
+}
+
+/* Bem */
+
+
+
+
+@mixin titulos($top, $bottom, $tamañoLetra){
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:$colorBookhausRosa;
+    margin-top: $top;
+    margin-bottom: $bottom;
+    font-size: $tamañoLetra;   
+}
+
+.novedades{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    &__titulo{
+        @include titulos (35px, 20px, 40px)  
+    }
+    &__subtitulo{
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        text-align:initial;
+        font-size: 20px; 
+        font-weight: bold;  
+        line-height: 35px;
+        margin-left: 100px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    &__contenedor{
+        background-color:$colorBookhausAzul;
+        width: 70%;
+        align-items: center;
+
+    }
+
+    &__texto{
+        color: $colorBookhausRosa;
+        font-family: 'Quicksand', sans-serif;
+        text-align: left;
+        font-size: 17px;   
+        line-height: 35px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 30px;
+    }
+
+    &__padrev{
+        display: flex;
+        background-color: $colorBookhausAzul;
+        width: 70%;
+        justify-content: center;
+    }
+
+    &__video{
+        margin-bottom: 30px;
+        display: block;
+
+    }
+
+}
+
+
+.parrafos{
+    &__titulos{
+        @include titulos (35px, 40px, 40px)
+    }
+    &__subtitulos{
+        color: $colorBookhausRosa;
+        font-family: 'Quicksand', sans-serif;
+        text-align: left;
+        font-size: 20px; 
+        font-weight: bold;  
+        line-height: 35px;
+        margin-left: 100px;
+    }
+    &__texto{
+        color: $colorBookhausAzul;
+        font-family: 'Quicksand', sans-serif;
+        text-align: left;
+        font-size: 17px;   
+        line-height: 35px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+#footer{
+    background-color: $colorBookhausRosa;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+#footerTitulos{
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: bold; 
+    margin-bottom: 15px;
+}
+#footerContenedores{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  
+}
+
+.footerTexto{
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 17px;
+    color: $colorBookhausAzul;
+    line-height: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    font-size: bold;
+    margin-bottom: 15px;
+}
+
+
+.footerP{
+    font-family: 'Quicksand', sans-serif; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $colorBookhausAzul;
+}
+
+.footerP:hover{
+    color:white;
+}
+
+#textoCopyright{
+    font-family: 'Quicksand', sans-serif; 
+    color: white;
+}
+
+#iconos{
+    color:$colorBookhausAzul;
+}
+
+#iconos:hover{
+    color: white;
+}
+
+hr{
+    border: white solid 2px;
+    border-radius: 5px;
+}
+
+
+
+.animacion{
+    &__texto{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        animation-name: animacionBh;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        color: rgb(135, 205, 249);
+
+        @keyframes animacionBh{
+            25%{
+                color: $colorBookhausRosa;
+                font-weight: bolder;
+            }
+        
+            50%{
+                color: $colorBookhausAzul;
+                font-weight: bolder;
+            }
+            75%{
+                color:$colorBookhausRosa;
+                font-weight: bolder;
+            }
+        
+            100%{
+                color: $colorBookhausAzul;
+                font-weight: bolder;
+            }
+        
+        }
+        
+    }
+   
+}
+
+
+.prensa{
+    background-color: $colorBookhausAzul;
+    width: 50%;
+    height: 240px;
+    margin-bottom: 40px;
+    &__titulo{
+        color: $colorBookhausRosa;
+        font-family: 'Quicksand', sans-serif;
+        text-align: left;
+        font-size: 20px; 
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 10px; 
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    &__web{
+        text-decoration: none;
+       
+    }
+
+    &__links{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px; 
+        text-decoration: none;
+        color: $colorBookhausRosa;
+        text-align: center;
+        margin-left: 40px;
+        &:hover{
+            color: white;
+        }
+
+    }
+}
+
+.clientes{
+    background-color: $colorBookhausRosa;
+    width: 90%;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    &__titulo{
+        color: $colorBookhausAzul;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px; 
+        align-content: center;
+        text-decoration: none;
+    }
+    
+    &__imagenes{
+        max-width: 100%;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        background-color: $colorBookhausRosa;
+    }
+
+}
+
+.whatsapp{
+    color: white;
+    display: block;
+    width: 70px;
+    height:70px;
+    color: $colorBookhausAzul;
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    border-radius:50%;
+    line-height: 80px;
+    text-align:center;
+    z-index:999;
+    &__link{
+    opacity: 70%;  
+    }
+}
+
+
+#promo{
+    background-color: $colorBookhausAzul;
+    margin-bottom: 50px;
+}
+
+.promoTexto{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#promoContenedores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  
+}
+
+    
+#headerEstilo{
+    display: flex;
+    justify-content: center;
+    background-color: $colorBookhausRosa;
+}
+
+#menuEstilo{
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#menuEstilo:hover{
+    color: $colorBookhausAzul;
+
+}
+
+.navbar-brand{
+    height: 150px;
+    width: 150px;
+}
+
+
+.navbar-toggler {
+    background-color: white;
+    
+}
+
+.navbar-light .navbar-toggler{
+    color: $colorBookhausAzul;
+}
+
