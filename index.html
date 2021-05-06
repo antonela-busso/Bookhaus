@@ -14,31 +14,31 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
   <body>
-     <!-- HEADER-->
-    <header id="headerEstilo">
+     <!--Header-->
+     <header class="headerEstilo">
       <div class="container-fluid navbar-light">
-        <nav class="navbar navbar-expand-lg container">
+        <nav class="navbar navbar-expand-lg container" >
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./imagenes/logoFinal.png" alt="Logo Bookhaus"></a>
+              <a class="navbar-brand" href="./index.html"> <img class="img-fluid img__logo" src="./imagenes/logoBh.png" alt="Logo Bookhaus"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center" >
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html" id="menuEstilo">HOME</a>
+                    <a class="menuEstilos" aria-current="page" href="./index.html">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./views/catalogo.html"  id="menuEstilo">CATÁLOGO</a>
+                    <a class="menuEstilos" aria-current="page" href="./views/catalogo.html">CATÁLOGO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./views/novedades.html"id="menuEstilo">NOVEDADES</a>
+                    <a class="menuEstilos" aria-current="page" href="./views/novedades.html">NOVEDADES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./views/preguntasfrecuentes.html"id="menuEstilo">PREGUNTAS FRECUENTES</a>
+                    <a class="menuEstilos" aria-current="page" href="./views/preguntasfrecuentes.html" >PREGUNTAS FRECUENTES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./views/contacto.html"id="menuEstilo">CONTACTO</a>
+                    <a class="menuEstilos" aria-current="page" href="./views/contacto.html">CONTACTO</a>
                   </li>
                   </ul>
                 </div>
@@ -46,84 +46,101 @@
             </nav>
         </div>
     </header>
-        <!-- CARROUSEL-->
-        <main class="container">
-            <div class="row">
-              <div class="col-12">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="./imagenes/libroHotel2.jpg" class="d-block w-100 carrouselMedidas" alt="Libro Hotel Budapest" id="carousel">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./imagenes/libroPolaroid2.jpg" class="d-block w-100 carrouselMedidas" alt="Libro Polaroid" id="carousel">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./imagenes/libroDinos2.jpg" class="d-block w-100 carrouselMedidas" alt="Libro All my friends are dead" id="carousel">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./imagenes/libroLego2.jpg" class="d-block w-100 carrouselMedidas" alt="Libro Lego"id="carousel" >
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
+      <!--Carrousel-->
+        <div class="container carouselNuevo">
+          <div class=row>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride ="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="./imagenes/carousel/dinos.jpg" class="d-block w-100 carouselImagen" alt="Libro All my friends are dead">
             </div>
-        </main>
-        <!-- DESCUENTOS-->
-        <h1 class="novedades__titulo">¡Descuentos!</h1>
-        <div class="pt-3" id="promo">
-          <div class="container text-center text-md-left">
-            <div class="row text-center text-md-left">
-              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1" id="promoContenedores">
-              <p class="promoTexto"> 3 y 6 CUOTAS SIN INTERÉS <br>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./imagenes/carousel/polaroid.jpg" class="d-block w-100 carouselImagen" alt="Libro The polaroid book">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./imagenes/carousel/lego.jpg" class="d-block w-100 carouselImagen" alt="Libretas Lego Moleskine">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./imagenes/carousel/helvetica.jpg" class="d-block w-100 carouselImagen" alt="Libro Hotel Budapest">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      </div>
+        <!--Promociones-->
+        <div class="pt-3 promo mb-4 ms-4 me-4 text-center justify-content-center">
+          <div class="container text-center text-md-center">
+            <div class="row text-center text-md-center">
+              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1 promoContenedores">
+              <p class=" text-center promoTexto"> 3 y 6 CUOTAS SIN INTERÉS <br>
                 Con todos los bancos y tarjetas</p>
               </div>
-              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1" id="promoContenedores" >
-                <p class="promoTexto">10% DE DESCUENTO <br>
+              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1 promoContenedores" >
+                <p class=" text-center promoTexto">10% DE DESCUENTO <br>
                   Abonando por transferencia bancaria </p>
               </div>
-              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1" id="promoContenedores">
-                <p class="promoTexto">ENVÍOS GRATIS A TODO EL PAÍS <br>
+              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1 promoContenedores">
+                <p class=" text-center promoTexto">ENVÍOS GRATIS A TODO EL PAÍS <br>
                     Para compras a partir de $5000</p>
               </div>
-              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1" id="promoContenedores">
-                <p class="promoTexto">CAMBIOS Y DEVOLUCIONES <br>
+              <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-1 promoContenedores">
+                <p class="text-center promoTexto">CAMBIOS Y DEVOLUCIONES <br>
                       Hasta 30 días después de la compra</p>
               </div>
               </div>
               </div>
             </div>
-        <!--FOOTER-->
-        <footer class="pt-5 pt-4" id="footer">
+          <!--Nuevos ingresos-->
+        <div class="pt-4 pb-4 ms-3 me-3 mb-4 nuevosIngresos">
+          <h1 class= " text-center ingresosTitulo">Nuevos Ingresos</h1>
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-6 col-md-6 col-xl-3 class">
+              <a href="./views/novedades.html"> <img class="fotosIngresos" src="./imagenes/ingresos/robot.jpg" alt="Libro Mr.Robot"> </a>
+              </div>
+              <div class="col-6 col-md-6 col-xl-3">
+                <a href="./views/catalogo.html"> <img class="fotosIngresos" src="./imagenes/ingresos/ny.jpg" alt="Libro New York in 50 maps"> </a>
+              </div>
+              <div class="col-6 col-md-6 col-xl-3">
+                <a href="./views/catalogo.html"> <img class="fotosIngresos" src="./imagenes/ingresos/harry.jpg" alt="Libretas Harry Potter"> </a>
+              </div>
+              <div class="col-6 col-md-6 col-xl-3">
+                <a href="./views/catalogo.html"> <img class="fotosIngresos" src="./imagenes/ingresos/collage.jpg" alt="Libro Collage"> </a>
+              </div>
+              </div>
+              </div>
+            </div>
+        <!--Footer-->
+        <footer class="pt-5 pt-4 footer">
           <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
-              <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-              <h2 id="footerTitulos">NOSOTROS</h2>
-              <p class="footerTexto">Somos una tienda online de libros en su idioma original. <br> Elegimos cada libro especialmente con amor y dedicación <br><br>♥</p>
+              <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+              <h2 class="footerTitulos">NOSOTROS</h2>
+              <p class="text-center footerTexto">Somos una tienda online argentina de libros en su idioma original. Elegimos cada libro especialmente para vos ♥</p>
               </div>
-              <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-                <h2 id="footerTitulos">CATEGORÍAS</h2>
-                <p class="footerP"> <a href="./index.html" class="footerP style="text-decoration: none;">HOME</a> 
+              <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+                <h2 class="footerTitulos">CATEGORÍAS</h2>
+                <p class="footerP"> <a href="./index.html" class="footerP">HOME</a> 
                 </p>
-                <p class="footerP"> <a href="./views/catalogo.html" class="footerP style="text-decoration: none;">CATÁLOGO</a> 
+                <p class="footerP"> <a href="./views/catalogo.html" class="footerP">CATÁLOGO</a> 
                 </p>
-                <p class="footerP"> <a href="./views/novedades.html" class="footerP style="text-decoration: none;">NOVEDADES</a> 
+                <p class="footerP"> <a href="./views/novedades.html" class="footerP">NOVEDADES</a> 
                 </p>
-                <p class="footerP"> <a href="./views/preguntasfrecuentes.html" class="footerP" style="text-decoration: none;">PREGUNTAS FRECUENTES</a> 
+                <p class="footerP"> <a href="./views/preguntasfrecuentes.html" class="footerP">PREGUNTAS FRECUENTES</a> 
                 </p>
-                <p class="footerP"> <a href="./views/contacto.html" class="footerP style="text-decoration: none;">CONTACTO</a> 
+                <p class="footerP"> <a href="./views/contacto.html" class="footerP">CONTACTO</a> 
                 </p>
               </div>
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-              <h2 id="footerTitulos">CONTACTO</h2>
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+              <h2 class="footerTitulos">CONTACTO</h2>
               <p class="footerTexto"> <i class="fas fa-map-marker-alt mr-3"></i>Aráoz 199 - CABA - (1414)</p>
               <p class="footerTexto"> <i class="far fa-envelope fa-fw mr-3"></i>bookhausarg@gmail.com</p>
               <p class="footerTexto"> <i class="fas fa-phone-alt fa-fw mr-3"></i>(+54 11) 4567-8908</p>
@@ -132,19 +149,19 @@
             <hr class="mb-4">
             <div class="row align-item-center">
               <div class="col-md-7 col-lg-8">
-                <p id="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
+                <p class="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
               </div>
               <div class="col-md-4 col-lg-4">
                 <div class="text-center text-md-right">
                   <ul class="list-unstyled list-inline">
                     <li class="list-inline-item">
-                      <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos" class="fab fa-instagram-square fa-fw"></i></a>
+                      <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-instagram-square fa-fw"></i></a>
                     </li>
                     <li class="list-inline-item">
-                      <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i  id="iconos"class="fab fa-facebook-square fa-fw" ></i></a>
+                      <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-facebook-square fa-fw" ></i></a>
                     </li>
                     <li class="list-inline-item">
-                      <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos"class="fab fa-twitter-square fa-fw"></i></a>
+                      <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-twitter-square fa-fw"></i></a>
                     </li>
                   </ul>
                 </div>

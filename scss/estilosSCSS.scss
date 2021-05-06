@@ -1,5 +1,7 @@
-$colorBookhausRosa: rgb(252, 166, 181);
-$colorBookhausAzul: rgb(7, 57, 101);
+$colorBookhausRosa: #E9646A;
+$colorBookhausAzul: #203668;
+$colorBookhausHeaderFooter: #fddfdf;
+$colorBookhausBody: #faf7f2;
 
 *{
     margin: 0;
@@ -9,341 +11,66 @@ $colorBookhausAzul: rgb(7, 57, 101);
 body{
     margin:0;
     padding:0;
+    background-color: $colorBookhausBody;
 }
 
+/*Header*/
 
-p{
-    color: $colorBookhausAzul;
-    font-family: 'Quicksand', sans-serif;
-    text-align: left;
-    font-weight: 500px;
+.img__logo{
+    max-width: 225px;
+    height: auto;
 }
 
-
-.container-fluid{
-    margin: 0;
-    padding: 0;  
-}
-
-.select{
-    width: 120px;
-    height: 20px;
-    font-size: 13px;
-    font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
-}
-
-#estiloInfo{
-    color: $colorBookhausAzul;
-    text-align: left;
-    text-decoration: none;
-}
-
-h1{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color:$colorBookhausRosa;
-    margin-top: 35px;
-    margin-bottom: 20px;
-    font-size: 40px;
-}
-
-
-img{
-    max-width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-}
-
-
-.fieldset{
-    color: $colorBookhausAzul;
-    font-family: 'Quicksand', sans-serif;
-    text-align: left;
-    font-size: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-
-.form-check-input{
-    border-color: $colorBookhausRosa;
-}
-
-.form-check-input:checked{
-    background-color: $colorBookhausRosa;
-    border-color: $colorBookhausRosa;
-}
-
-.form-check-input:focus{
-    box-shadow: none;
-    border-color: $colorBookhausRosa;
-}
-
-.form-control{
-    border-color: $colorBookhausRosa;
-    border-radius: .50rem;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;
-    color: $colorBookhausAzul;
-}
-
-.form-control:focus{
-    @extend .form-control;
-    box-shadow:none;
-    font-weight: bold;
-}
-
-#buttonForm{
-    color: $colorBookhausAzul;
-    background-color: $colorBookhausRosa;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    width: 100%;
-    height: 30px;
-    border-radius: 30px;
-    font-weight: bold;
-    border: 0;
-    align-items: center;
-}
-
-#buttonForm:hover{
-    opacity: 80%;
-    background-color:  rgb(252, 166, 181);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    border: 0;
-}
-
-.carousel-inner img{
-    width: 100%;
-    max-height: 650px;
-    
-}
-
-#carouselExampleControls{
-    margin-top: 40px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-} 
-
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
-    background-color: rgb(252, 166, 181);
-    border-radius: 80px;
-} 
-
-#iconosRedes{
-    font-size: 25px;
-    color: $colorBookhausAzul;
-    margin-top: 100px;
-    
-}
-
-.imagenCero{
-    margin-left: 0;
-    border-radius: 7px;
-}
-
-#cartas{
-    margin-bottom: 20px;
-    margin-top: 30px;
-    justify-content: space-evenly;
-    
-}
-#justificado{
-    justify-content: space-evenly;
-}
-.card{
-    border: solid 1px;
-    color: $colorBookhausAzul;
-    border-radius: 7px;
-    display: flex;    
-}
-
-
-#cartasEstilo{  
-    padding: 0;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-.card-body{
-    color: $colorBookhausAzul;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    border: solid 1px;
-    margin-top: 0;
-    color: $colorBookhausAzul;
-    border-radius: 7px;
-    margin-top: 5px;
-    background-color: $colorBookhausRosa;
-
-}
-
-
-.card-text{
-    text-align: center;
-    color: $colorBookhausAzul;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-
-}
-
-#btn{
+.headerEstilo{
     display: flex;
-    color: white;
-    background-color: $colorBookhausAzul;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    height: 30px;
-    border-radius: 7px;
-    font-weight: bold;
-    border: 0;
-    text-decoration: none;
-    align-items: center;
     justify-content: center;
-   
+    background-color: $colorBookhausHeaderFooter;  
 }
 
-#btn:hover{
-    opacity: 80%;
-    background-color: $colorBookhausAzul;
+.menuEstilos{
+    color: $colorBookhausAzul;
+    text-decoration: none;
     font-family: 'Quicksand', sans-serif;
-    color: white;
-    font-size: 16px;
-    border: 0;
-    
+    font-size: 17px;
+    font-weight: bold;
 }
 
-#btn:focus{
-    box-shadow: none;
-    border-color: rgb(252, 166, 181);
+.menuEstilos:hover{
+    color: $colorBookhausRosa;
 }
 
-/* Bem */
+.navbar-nav{
+    justify-content: space-evenly;
+    width: 700px;
+}
 
+.navbar-toggler {
+    background-color: white;   
+}
 
+.navbar-light .navbar-toggler{
+    color: $colorBookhausAzul;
+}
 
+/*Footer*/
 
-@mixin titulos($top, $bottom, $tamañoLetra){
+.footer{
+    background-color: $colorBookhausHeaderFooter;
+    color: $colorBookhausRosa;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    text-align: center;
-    color:$colorBookhausRosa;
-    margin-top: $top;
-    margin-bottom: $bottom;
-    font-size: $tamañoLetra;   
 }
 
-.novedades{
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    align-items: center;
-    &__titulo{
-        @include titulos (35px, 20px, 40px)  
-    }
-    &__subtitulo{
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-        text-align:initial;
-        font-size: 20px; 
-        font-weight: bold;  
-        line-height: 35px;
-        margin-left: 100px;
-        margin-top: 35px;
-        margin-bottom: 10px;
-    }
-    &__contenedor{
-        background-color:$colorBookhausAzul;
-        width: 70%;
-        align-items: center;
-
-    }
-
-    &__texto{
-        color: $colorBookhausRosa;
-        font-family: 'Quicksand', sans-serif;
-        text-align: left;
-        font-size: 17px;   
-        line-height: 35px;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 30px;
-    }
-
-    &__padrev{
-        display: flex;
-        background-color: $colorBookhausAzul;
-        width: 70%;
-        justify-content: center;
-    }
-
-    &__video{
-        margin-bottom: 30px;
-        display: block;
-
-    }
-
-}
-
-
-.parrafos{
-    &__titulos{
-        @include titulos (35px, 40px, 40px)
-    }
-    &__subtitulos{
-        color: $colorBookhausRosa;
-        font-family: 'Quicksand', sans-serif;
-        text-align: left;
-        font-size: 20px; 
-        font-weight: bold;  
-        line-height: 35px;
-        margin-left: 100px;
-    }
-    &__texto{
-        color: $colorBookhausAzul;
-        font-family: 'Quicksand', sans-serif;
-        text-align: left;
-        font-size: 17px;   
-        line-height: 35px;
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 20px;
-    }
-    
-}
-
-#footer{
-    background-color: $colorBookhausRosa;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-}
-#footerTitulos{
+.footerTitulos{
     font-size: 20px;
     font-family: 'Quicksand', sans-serif; 
-    font-weight: bold; 
-    margin-bottom: 15px;
+    font-weight: bold;    
 }
-#footerContenedores{
+
+.footerContenedores{
     display: flex;
     flex-direction: column;
-    align-items: center; 
-  
+    align-items: center;  
 }
 
 .footerTexto{
@@ -351,11 +78,8 @@ img{
     font-size: 17px;
     color: $colorBookhausAzul;
     line-height: 20px;
-    padding-left: 70px;
-    padding-right: 70px;
-    text-align: center;
     font-size: bold;
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
 }
 
 
@@ -368,41 +92,426 @@ img{
 }
 
 .footerP:hover{
-    color:white;
+    color:$colorBookhausRosa;
+    text-decoration: none;
 }
 
-#textoCopyright{
+.textoCopyright{
     font-family: 'Quicksand', sans-serif; 
-    color: white;
+    color: $colorBookhausAzul;
 }
 
-#iconos{
+.iconos{
     color:$colorBookhausAzul;
 }
 
-#iconos:hover{
-    color: white;
+.iconos:hover{
+    color: $colorBookhausRosa;
 }
 
 hr{
-    border: white solid 2px;
+    border: $colorBookhausRosa solid 2px;
     border-radius: 5px;
 }
 
+/* Carousel*/
 
+.carouselNuevo{
+    margin-top: 50px;
+    margin-bottom: 50px;   
+}
+
+.carouselImagen{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    background-color: rgb(252, 166, 181);
+    border-radius: 80px;
+} 
+
+.carousel-inner {
+    border-radius: 50px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*Promociones*/
+
+.promo{
+    background-color: $colorBookhausHeaderFooter;
+    border-radius: 70px;
+    border: 1px solid $colorBookhausRosa;
+}
+
+.promoTexto{
+    color: $colorBookhausRosa;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.promoContenedores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+/*Nuevos Ingresos*/
+
+.nuevosIngresos{
+    background-color: $colorBookhausBody;
+    border-radius: 70px;
+    border: 1px solid $colorBookhausRosa;   
+}
+
+.ingresosTitulo{
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    color: $colorBookhausRosa;
+}
+
+.fotosIngresos{
+    width:80%;
+    border-radius: 20px;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 10px;  
+}
+
+.fotosIngresos:hover{
+    transform: scale(1.1);
+    border-radius: 20px;    
+}
+
+/* Catálogo */
+
+.contenedorTitulo{
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid $colorBookhausRosa;
+}
+.tituloCatalogo{
+    color: $colorBookhausRosa;
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;  
+}
+
+.imagenCero{
+    margin-left: 0;
+    border-radius: 7px;
+    transition: all 0.5s;
+}
+
+.imagenCero:hover{
+    transform: scale(1.2) rotate(5deg);
+}
+
+.cartas{
+    margin-bottom: 30px;
+    margin-top: 30px; 
+}
+
+.justificadoCartas{
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 100%;
+    border:none;
+    overflow: hidden;    
+}
+
+.cartasEstilo{  
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.card-body{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: $colorBookhausRosa;
+    border: solid 1px $colorBookhausRosa;
+    border-radius: 7px;
+    margin-top: 5px;
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+
+.card-text{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: $colorBookhausAzul;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-title{
+    margin-top: 10px;
+}
+
+.btnCartas{
+    width: 100px;
+    display: flex;
+    color: white;
+    background-color: $colorBookhausRosa;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 30px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.btnCartas:hover{
+    opacity: 80%;
+    background-color: $colorBookhausRosa;
+    color: white;
+    border: 0;  
+}
+
+/* Texto Novedades */
+
+@mixin titulos($top, $bottom, $tamañoLetra){
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:$colorBookhausRosa;
+    margin-top: $top;
+    margin-bottom: $bottom;
+    font-size: $tamañoLetra;   
+}
+
+.novedades{
+    background-color: white;
+    border-radius: 100px;
+    border: 1px solid $colorBookhausRosa;
+    margin-top: 40px;
+    &__titulo{
+        @include titulos (5px, 20px, 40px)    
+    }
+    &__subtitulo{
+        color: $colorBookhausAzul;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-size: 20px; 
+        font-weight: bold;     
+    }
+    &__contenedores{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0 50px;   
+    }
+    &__texto{
+        text-align: center;
+        color: #E9646A;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;  
+        margin-bottom: 100px;  
+    }
+    &__video{
+        margin-bottom: 30px;
+        width: 50%;
+        border-radius: 20px;
+    }
+    &__novdiv{
+        padding: 0px 30px 0px 0px;    
+    }
+    &__contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+}
+
+.row{
+    margin: 0%;
+    padding: 0;
+}
+
+
+/*Lectores Felices*/
+
+.lectores{
+    background-color: $colorBookhausHeaderFooter;
+    border-radius: 100px;
+    border: 1px solid $colorBookhausRosa;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    &__titulo{
+        color: $colorBookhausRosa;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        font-size: 35px; 
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__contenedores{
+        display: flex;
+        flex-direction: column;    
+    }
+    &__imagenes{
+        transition: all 0.5s;
+        border-radius: 20px;
+        margin: 0;
+        padding: 10px;     
+    }
+    &__imagenes:hover{
+        transform: scale(1.1);
+        border-radius: 20px;
+    }
+    &__centrado{
+        justify-content:space-evenly;
+    }
+}
+
+/* Prensa*/
+
+.prensa{
+    background-color:white;
+    height: 240px;
+    padding-top: 30px;
+    border-radius: 80px;
+    border: 1px solid $colorBookhausRosa;
+    margin-bottom: 40px;
+    &__contenedor{
+        padding: 0%;
+        margin-top: 50px;
+    }
+    &__titulo{
+        color: $colorBookhausRosa;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__web{
+        text-decoration: none;   
+    }
+
+    &__links{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px; 
+        text-decoration: none;
+        color: $colorBookhausAzul;
+        text-align: center;
+        &:hover{
+            color: $colorBookhausRosa;
+        }
+    }
+}
+
+/* Accordion Preguntas Frecuentes */
+
+.contenedorPreguntas{
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid $colorBookhausRosa;
+}
+
+.tituloPreguntas{
+    color: $colorBookhausRosa;
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;  
+}
+
+#accordionExample{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    align-items: center;  
+}
+
+.accordion-flush{
+    color: $colorBookhausAzul; 
+    text-align: left;  
+      
+}
+
+.accordion-button{
+    color: $colorBookhausRosa;
+    background-color: white;
+    font-weight: bold;  
+    border: 1px solid $colorBookhausRosa;   
+}
+
+.accordion-button:focus{
+    background-color: white;
+    box-shadow: none;  
+    border: 1px solid $colorBookhausRosa;
+
+}
+
+.accordion-button:not(.collapsed){
+    color: $colorBookhausRosa;
+    font-weight: bold;
+    background-color: white;       
+}
+
+.accordion-item{
+    margin-bottom: 35px;
+    background-color: white;   
+}
+  
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 30px;   
+}
+
+.accordion-flush .accordion-item{ 
+    border-bottom: white;
+    border-radius: 30px;
+}
+
+.accordion-header{
+   line-height: 50px;
+   border: none;   
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed{
+    border-radius: 30px;
+}
+
+.estiloPreguntas{
+    width: 80%;
+}
+
+/* Frase animada */
 
 .animacion{
     &__texto{
         font-family: 'Quicksand', sans-serif;
         font-weight: bold;
-        text-align: center;
         animation-name: animacionBh;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         font-size: 18px;
-        margin-bottom: 30px;
-        margin-top: 50px;
-        color: rgb(135, 205, 249);
 
         @keyframes animacionBh{
             25%{
@@ -430,73 +539,7 @@ hr{
    
 }
 
-
-.prensa{
-    background-color: $colorBookhausAzul;
-    width: 50%;
-    height: 240px;
-    margin-bottom: 40px;
-    &__titulo{
-        color: $colorBookhausRosa;
-        font-family: 'Quicksand', sans-serif;
-        text-align: left;
-        font-size: 20px; 
-        font-weight: bold;
-        margin-top: 30px;
-        margin-bottom: 10px; 
-        margin-left: 50px;
-        text-align: center;
-    }
-
-    &__web{
-        text-decoration: none;
-       
-    }
-
-    &__links{
-        font-family: 'Quicksand', sans-serif;
-        font-size: 18px; 
-        text-decoration: none;
-        color: $colorBookhausRosa;
-        text-align: center;
-        margin-left: 40px;
-        &:hover{
-            color: white;
-        }
-
-    }
-}
-
-.clientes{
-    background-color: $colorBookhausRosa;
-    width: 90%;
-    margin-top: 40px;
-    justify-content: space-evenly;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 40px;
-    &__titulo{
-        color: $colorBookhausAzul;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        font-size: 20px; 
-        align-content: center;
-        text-decoration: none;
-    }
-    
-    &__imagenes{
-        max-width: 100%;
-        height: 400px;
-        margin: 0;
-        padding: 0;
-        margin-left: 10px;
-        background-color: $colorBookhausRosa;
-    }
-
-}
+/* Whatsapp */
 
 .whatsapp{
     color: white;
@@ -506,69 +549,184 @@ hr{
     color: $colorBookhausAzul;
     position: fixed;
     right: 40px;
-    bottom: 60px;
+    bottom: 80px;
     border-radius:50%;
     line-height: 80px;
     text-align:center;
     z-index:999;
     &__link{
-    opacity: 70%;  
+        opacity: 70%; 
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px; 
     }
 }
 
+/* Formulario */
 
-#promo{
-    background-color: $colorBookhausAzul;
-    margin-bottom: 50px;
+.centradoContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloContacto{
+    color: $colorBookhausRosa;
+    font-size: 45px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: left;  
 }
 
-.promoTexto{
-    color: white;
+.textoContacto{
+    color: $colorBookhausAzul;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-weight: bold;
+    font-size: 17px;
 }
 
-#promoContenedores{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  
-}
-
-    
-#headerEstilo{
-    display: flex;
-    justify-content: center;
-    background-color: $colorBookhausRosa;
-}
-
-#menuEstilo{
-    color: white;
-    text-decoration: none;
+.fieldset{
+    color: $colorBookhausAzul;
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    text-align: left;
+    font-size: 20px;   
+}
+
+.form-check-input{
+    border-color: $colorBookhausRosa;
+}
+
+.form-check-input:checked{
+    background-color: $colorBookhausRosa;
+    border-color: $colorBookhausRosa;
+}
+
+.form-check-input:focus{
+    box-shadow: none;
+    border-color: $colorBookhausRosa;
+}
+
+.form-control{
+    border-color: $colorBookhausRosa;
+    border-radius: .80rem;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    color: $colorBookhausAzul;
+}
+
+.form-control:focus{
+    @extend .form-control;
+    box-shadow:none;
     font-weight: bold;
 }
 
-#menuEstilo:hover{
-    color: $colorBookhausAzul;
-
+.botonForm{
+    color: white;
+    background-color: $colorBookhausRosa;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 1px solid $colorBookhausRosa;
+    align-items: center;
 }
 
-.navbar-brand{
-    height: 150px;
-    width: 150px;
+.botonForm:hover{
+    opacity: 80%;
+    background-color: $colorBookhausRosa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    border: 0;   
 }
 
+@media screen and (max-width: 800px){
+    .centradoContacto{
+      margin-top: 50px;
+    }
+  
+    .estiloPreguntas{
+      width: 100%;
+    }
 
-.navbar-toggler {
-    background-color: white;
+    .navbar-nav{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .novedades__video{
+        width: 100%;
+    }
+  
+    .novedades__contenedores{
+        flex-direction: column;
+    }
+  
+    .pruebadiv{
+        padding: 0%;
+    }
+  
+    .novedades{
+        border-radius: 30px;
+    }
+
+    .lectores{
+        border-radius: 30px;
+    }
+    .novedades__texto{
+        margin-bottom: 20px;
+    }
+
+    .novedades__novdiv{
+        padding: 0;
+    }
+
+    .prensa{
+        border-radius: 30px;
+    }
+
+  }
+
+  @media screen and (max-width: 450px){
+    .imagenCero{
+        height: 650px;
+    }
     
-}
+    .novedades__contenedores{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .lectores__imagenes{
+        margin-bottom: 10px;
+        height: 450px;
+    }
 
-.navbar-light .navbar-toggler{
-    color: $colorBookhausAzul;
-}
+    .lectores__padding{
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+
+    .lectores{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .lectores__contenedores{
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .lectores__titulo{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+  }
 

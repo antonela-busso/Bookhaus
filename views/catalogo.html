@@ -10,35 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a330ed4ae8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">    
 </head>
 <body>
-  <!-- HEADER-->
-  <header id="headerEstilo">
+  <!-- Header-->
+  <header class="headerEstilo">
     <div class="container-fluid navbar-light">
       <nav class="navbar navbar-expand-lg container" >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../imagenes/logoFinal.png" alt="Logo Bookhaus"></a>
+            <a class="navbar-brand" href="./index.html"><img class="img-fluid img__logo" src="../imagenes/logoBh.png" alt="Logo Bookhaus"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center" >
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html" id="menuEstilo">HOME</a>
+                  <a class="menuEstilos" aria-current="page" href="../index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../catalogo.html" id="menuEstilo">CATÁLOGO</a>
+                  <a class="menuEstilos"aria-current="page" href="./catalogo.html">CATÁLOGO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../views/novedades.html"id="menuEstilo">NOVEDADES</a>
+                  <a class="menuEstilos" aria-current="page" href="./novedades.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../views/preguntasfrecuentes.html"id="menuEstilo">PREGUNTAS FRECUENTES</a>
+                  <a class="menuEstilos"aria-current="page" href="./preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../views/contacto.html"id="menuEstilo">CONTACTO</a>
+                  <a class="menuEstilos" aria-current="page" href="./contacto.html">CONTACTO</a>
                 </li>
                 </ul>
               </div>
@@ -47,136 +48,163 @@
       </div>
   </header>
   <main>
-     <!--CATÁLOGO-->
-  <h1 class="novedades__titulo">Catálogo</h1>
-  <div class="container" id="cartas">
-    <div class="row" id="justificado">
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+     <!--Catálogo-->
+     <div class="container">
+       <div class="row d-flex justify-content-center">
+        <div class="container col-6 col-md-3 col-lg-3 mt-4 animate__animated animate__bounceInDown contenedorTitulo">
+          <h1 class= "text-center tituloCatalogo">Catálogo</h1>
+        </div>
+       </div>
+     </div>
+  <div class="container cartas">
+    <div class="row justificadoCartas">
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/polaroid.JPG"  class="imagenCero" alt="Libro Polaroid">
+          <img src="../imagenes/catalogo/polaroid.jpg"  class="imagenCero" alt="Libro Polaroid">
         </div>
         <div class="card-body">
           <h5 class="card-title">Polaroid</h5>
           <p class="card-text">$2500</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/seinfeldia.JPG"  class="imagenCero" alt="Libro Seinfeldia">
+          <img src="../imagenes/catalogo/seinfeldia.jpg"  class="imagenCero" alt="Libro Seinfeldia">
         </div>
         <div class="card-body">
           <h5 class="card-title">Seinfeldia</h5>
           <p class="card-text">$3000</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/travel.JPG"  class="imagenCero" alt="Libro Travel listography">
+          <img src="../imagenes/catalogo/travel.jpg"  class="imagenCero" alt="Libro Travel listography">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Travel Listography</h5>
+          <h5 class="card-title">Travel</h5>
           <p class="card-text">$1500</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/tarantino.JPG"  class="imagenCero" alt="Libro Tarantino">
+          <img src="../imagenes/catalogo/tarantino.jpg"  class="imagenCero" alt="Libro Tarantino">
         </div>
         <div class="card-body">
           <h5 class="card-title">Tarantino</h5>
           <p class="card-text">$4600</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/moxNox.JPG"  class="imagenCero" alt="Libro Moxnox">
+          <img src="../imagenes/catalogo/moxNox.jpg"  class="imagenCero" alt="Libro Moxnox">
         </div>
         <div class="card-body">
           <h5 class="card-title">MoxNox</h5>
           <p class="card-text">$2000</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/back.JPG"  class="imagenCero" alt="Libro We don´t need roads">
+          <img src="../imagenes/catalogo/back.jpg"  class="imagenCero" alt="Libro We don´t need roads">
         </div>
         <div class="card-body">
           <h5 class="card-title">We don´t need...</h5>
           <p class="card-text">$1800</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/cats.JPG"  class="imagenCero" alt="Libro Cats vs humans">
+          <img src="../imagenes/catalogo/cats.jpg"  class="imagenCero" alt="Libro Cats vs humans">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Cats vs human<h5>
+          <h5 class="card-title">Cats vs Human</h5>
           <p class="card-text">$1300</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/sick.JPG"  class="imagenCero" alt="Libro Sick in the head">
+          <img src="../imagenes/catalogo/sick.jpg"  class="imagenCero" alt="Libro Sick in the head">
         </div>
         <div class="card-body">
           <h5 class="card-title">Sick in the head</h5>
           <p class="card-text">$2800</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/ghost.JPG" class="imagenCero" alt="Libro Ghost World">
+          <img src="../imagenes/catalogo/ghost.jpg" class="imagenCero" alt="Libro Ghost World">
         </div>
         <div class="card-body">
           <h5 class="card-title">Ghost World</h5>
           <p class="card-text">$1900</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" 100px;" href="#">COMPRAR</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-2" id=cartasEstilo>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
         <div class="card">
-          <img src="../imagenes/catalogo/silence.JPG"  class="imagenCero" alt="Libro Silence">
+          <img src="../imagenes/catalogo/silence.jpg"  class="imagenCero" alt="Libro Silence">
         </div>
         <div class="card-body">
           <h5 class="card-title">Silence</h5>
           <p class="card-text">$1600</p>
-          <a class="mx-auto" style="width: 100px;" href="#" id="btn">COMPRAR</a>
+          <a class="mx-auto btnCartas" href="#">COMPRAR</a>
         </div>
       </div>
-   </div>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
+        <div class="card">
+          <img src="../imagenes/catalogo/lennon.jpg"  class="imagenCero" alt="Libro In his own write">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">John Lennon</h5>
+          <p class="card-text">$1400</p>
+          <a class="mx-auto btnCartas" style="width: 100px;" href="#">COMPRAR</a>
+        </div>
+      </div>
+      <div class="col-xs-10 col-md-3 col-xl-3 cartasEstilo">
+        <div class="card">
+          <img src="../imagenes/catalogo/hygge.jpg"  class="imagenCero" alt="Libro Hygge">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Hygge</h5>
+          <p class="card-text">$1200</p>
+          <a class="mx-auto btnCartas" style="width: 100px;" href="#">COMPRAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   </main> 
-  <!--FOOTER-->
-  <footer class="pt-5 pt-4" id="footer">
+  <!--Footer-->
+  <footer class="pt-5 pt-4 footer">
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
-        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-        <h2 id="footerTitulos">NOSOTROS</h2>
-        <p class="footerTexto">Somos una tienda online de libros en su idioma original. <br> Elegimos cada libro especialmente con amor y dedicación <br><br>♥</p>
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+        <h2 class="footerTitulos">NOSOTROS</h2>
+        <p class="text-center footerTexto">Somos una tienda online argentina de libros en su idioma original. Elegimos cada libro especialmente para vos ♥</p>
         </div>
-        <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-          <h2 id="footerTitulos">CATEGORÍAS</h2>
-          <p class="footerP"> <a href="../index.html" class="footerP style="text-decoration: none;">HOME</a> 
+        <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+          <h2 class="footerTitulos">CATEGORÍAS</h2>
+          <p class="footerP"> <a href="../index.html" class="footerP">HOME</a> 
           </p>
-          <p class="footerP"> <a href="./catalogo.html"  class="footerP style="text-decoration: none;">CATÁLOGO</a> 
+          <p class="footerP"> <a href="./catalogo.html" class="footerP">CATÁLOGO</a> 
           </p>
-          <p class="footerP"> <a href="./novedades.html" class="footerP style="text-decoration: none;">NOVEDADES</a> 
+          <p class="footerP"> <a href="./novedades.html" class="footerP">NOVEDADES</a> 
           </p>
-          <p class="footerP"> <a href="./preguntasfrecuentes.html" class="footerP" style="text-decoration: none;">PREGUNTAS FRECUENTES</a> 
+          <p class="footerP"> <a href="./preguntasfrecuentes.html" class="footerP">PREGUNTAS FRECUENTES</a> 
           </p>
-          <p class="footerP"> <a href="./contacto.html" class="footerP style="text-decoration: none;">CONTACTO</a> 
+          <p class="footerP"> <a href="./contacto.html" class="footerP">CONTACTO</a> 
           </p>
         </div>
-      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-        <h2 id="footerTitulos">CONTACTO</h2>
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+        <h2 class="footerTitulos">CONTACTO</h2>
         <p class="footerTexto"> <i class="fas fa-map-marker-alt mr-3"></i>Aráoz 199 - CABA - (1414)</p>
         <p class="footerTexto"> <i class="far fa-envelope fa-fw mr-3"></i>bookhausarg@gmail.com</p>
         <p class="footerTexto"> <i class="fas fa-phone-alt fa-fw mr-3"></i>(+54 11) 4567-8908</p>
@@ -185,19 +213,19 @@
       <hr class="mb-4">
       <div class="row align-item-center">
         <div class="col-md-7 col-lg-8">
-          <p id="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
+          <p class="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
         </div>
         <div class="col-md-4 col-lg-4">
           <div class="text-center text-md-right">
             <ul class="list-unstyled list-inline">
               <li class="list-inline-item">
-                <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos" class="fab fa-instagram-square fa-fw"></i></a>
+                <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-instagram-square fa-fw"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i  id="iconos"class="fab fa-facebook-square fa-fw" ></i></a>
+                <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-facebook-square fa-fw" ></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos"class="fab fa-twitter-square fa-fw"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-twitter-square fa-fw"></i></a>
               </li>
             </ul>
           </div>

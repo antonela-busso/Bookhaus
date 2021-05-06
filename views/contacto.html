@@ -10,35 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a330ed4ae8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">   
 </head>
 <body>
-  <!-- HEADER-->
-  <header id="headerEstilo">
+  <!--Header-->
+  <header class="headerEstilo">
     <div class="container-fluid navbar-light">
       <nav class="navbar navbar-expand-lg container" >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../imagenes/logoFinal.png" alt="Logo Bookhaus"></a>
+            <a class="navbar-brand" href="../index.html"><img class="img-fluid img__logo" src="../imagenes/logoBh.png" alt="Logo Bookhaus"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center" >
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html" id="menuEstilo">HOME</a>
+                  <a class="menuEstilos" aria-current="page" href="../index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./catalogo.html" id="menuEstilo">CATÁLOGO</a>
+                  <a class="menuEstilos" aria-current="page" href="./catalogo.html">CATÁLOGO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./novedades.html" id="menuEstilo">NOVEDADES</a>
+                  <a class="menuEstilos" aria-current="page" href="./novedades.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./novedades.html" id="menuEstilo">PREGUNTAS FRECUENTES</a>
+                  <a class="menuEstilos" aria-current="page" href="./preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./contacto.html" id="menuEstilo">CONTACTO</a>
+                  <a class="menuEstilos"aria-current="page" href="./contacto.html">CONTACTO</a>
                 </li>
                 </ul>
               </div>
@@ -47,66 +48,70 @@
       </div>
   </header>
     <main>
-      <!--FORMULARIO-->
-      <h1>Contacto</h1>
+      <!--Formulario-->
         <div class="container">
-            <form action="" class="fieldset">
-                <div class="form-group">          
-                  <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label">E-Mail</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2">
-                  </div>
-                  <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label">Teléfono (opcional) </label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2">
-                  </div>
-                  <div class="mb-3" class="">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                  <p id="estiloInfo">¿Desea recibir información?</p>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">Sí</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">No</label>
-                  </div>
-                </div>
-                <div>
-                    <button type="submit" class="mt-3" id="buttonForm">ENVIAR</button>
-                </div>
-            </form>
+          <div class="row">
+              <div class="col-md-5 centradoContacto">
+                <h1 class="text-center container animate__animated animate__bounceInLeft tituloContacto">Contacto</h1>
+                <p class="text-center mb-2 mt-2 ms-5 me-5 animate__animated animate__bounceInLeft textoContacto">-Showroom abierto con cita previa de Lunes a Viernes de 10:00 a 10 hs y sábados de 13 a 18 hs. <br>
+                - Retiro de pedidos únicamente de lunes a viernes. <br>
+                - Estamos en Aráoz 199, Villa Crespo C.A.B.A. </p>            
+              </div>              
+        <div class="col-md-7">
+          <form action="" class="fieldset">
+            <div class="form-group">          
+              <div class="mb-2 mt-5">
+                <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="mb-2">
+                <label for="formGroupExampleInput2" class="form-label">E-Mail</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2">
+              </div>
+              <div class="mb-2">
+                <label for="formGroupExampleInput2" class="form-label">Teléfono (opcional) </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2">
+              </div>
+              <div class="mb-2" class="">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Deseo recibir información</label>
+              </div>
+            </div>
+            <div>
+                <button type="submit" class="mt-2 mb-5 botonForm">ENVIAR</button>
+            </div>
+        </form>
+        </div>
+          </div>
         </div>
     </main>
-    <!--FOOTER-->
-    <footer class="pt-5 pt-4" id="footer">
+    <!--Footer-->
+    <footer class="pt-5 pt-4 footer">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
-          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-          <h2 id="footerTitulos">NOSOTROS</h2>
-          <p class="footerTexto">Somos una tienda online de libros en su idioma original. <br> Elegimos cada libro especialmente con amor y dedicación <br><br>♥</p>
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+          <h2 class="footerTitulos">NOSOTROS</h2>
+          <p class="text-center footerTexto">Somos una tienda online argentina de libros en su idioma original. Elegimos cada libro especialmente para vos ♥</p>
           </div>
-          <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-            <h2 id="footerTitulos">CATEGORÍAS</h2>
-            <p class="footerP"> <a href="../index.html" class="footerP style="text-decoration: none;">HOME</a> 
+          <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+            <h2 class="footerTitulos">CATEGORÍAS</h2>
+            <p class="footerP"> <a href="../index.html" class="footerP">HOME</a> 
             </p>
-            <p class="footerP"> <a href="./catalogo.html" class="footerP style="text-decoration: none;">CATÁLOGO</a> 
+            <p class="footerP"> <a href="./catalogo.html" class="footerP">CATÁLOGO</a> 
             </p>
-            <p class="footerP"> <a href="./novedades.html" class="footerP style="text-decoration: none;">NOVEDADES</a> 
+            <p class="footerP"> <a href="./novedades.html" class="footerP"></a>NOVEDADES</a> 
             </p>
-            <p class="footerP"> <a href="./preguntasfrecuentes.html" class="footerP" style="text-decoration: none;">PREGUNTAS FRECUENTES</a> 
+            <p class="footerP"> <a href="./preguntasfrecuentes.html" class="footerP">PREGUNTAS FRECUENTES</a> 
             </p>
-            <p class="footerP"> <a href="./contacto.html" class="footerP style="text-decoration: none;">CONTACTO</a> 
+            <p class="footerP"> <a href="./contacto.html" class="footerP">CONTACTO</a> 
             </p>
           </div>
-        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-          <h2 id="footerTitulos">CONTACTO</h2>
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+          <h2 class="footerTitulos">CONTACTO</h2>
           <p class="footerTexto"> <i class="fas fa-map-marker-alt mr-3"></i>Aráoz 199 - CABA - (1414)</p>
           <p class="footerTexto"> <i class="far fa-envelope fa-fw mr-3"></i>bookhausarg@gmail.com</p>
           <p class="footerTexto"> <i class="fas fa-phone-alt fa-fw mr-3"></i>(+54 11) 4567-8908</p>
@@ -115,19 +120,19 @@
         <hr class="mb-4">
         <div class="row align-item-center">
           <div class="col-md-7 col-lg-8">
-            <p id="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
+            <p class="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
           </div>
           <div class="col-md-4 col-lg-4">
             <div class="text-center text-md-right">
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
-                  <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos" class="fab fa-instagram-square fa-fw"></i></a>
+                  <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-instagram-square fa-fw"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i  id="iconos"class="fab fa-facebook-square fa-fw" ></i></a>
+                  <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-facebook-square fa-fw" ></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos"class="fab fa-twitter-square fa-fw"></i></a>
+                  <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-twitter-square fa-fw"></i></a>
                 </li>
               </ul>
             </div>

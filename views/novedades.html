@@ -14,31 +14,31 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-  <!-- HEADER-->
-    <header id="headerEstilo">
+  <!-- Header-->
+    <header class="headerEstilo">
         <div class="container-fluid navbar-light">
           <nav class="navbar navbar-expand-lg container" >
               <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../imagenes/logoFinal.png" alt="Logo Bookhaus"></a>
+                <a class="navbar-brand" href="../index.html"><img class="img-fluid img__logo" src="../imagenes/logoBh.png" alt="Logo Bookhaus"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center" >
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html"  id="menuEstilo">HOME</a>
+                      <a class="menuEstilos"aria-current="page" href="../index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./catalogo.html"  id="menuEstilo">CATÁLOGO</a>
+                      <a class="menuEstilos" aria-current="page" href="./catalogo.html">CATÁLOGO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./novedades.html" id="menuEstilo">NOVEDADES</a>
+                      <a class="menuEstilos" aria-current="page" href="./novedades.html">NOVEDADES</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./preguntasfrecuentes.html" id="menuEstilo">PREGUNTAS FRECUENTES</a>
+                      <a class="menuEstilos" aria-current="page" href="./preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="contacto.html" id="menuEstilo">CONTACTO</a>
+                      <a class="menuEstilos"aria-current="page" href="contacto.html">CONTACTO</a>
                     </li>
                     </ul>
                   </div>
@@ -46,68 +46,99 @@
               </nav>
           </div>
       </header>
-      <!--TEXTO NOVEDADES-->
-    <main class="novedades">
-        <h1 class="novedades__titulo">Novedades</h1>
-        <div class="novedades__contenedor">
-            <p class="novedades__subtitulo">MR. ROBOT COMPOSITION BOOK</p>
-            <p class="novedades__texto""> Se trata de una versión para los fans del diario personal de Elliot, donde el protagonista del show deja pistas para los seguidores. El material fue escrito por Sam Esmail y Courtney Looney (el creador y el guionista respectivamente).
-            Contiene elementos que se podrán extraer del volumen para ser examinados más en profundidad por el lector, con la idea de promover la investigación y la inmersión en la historia. Estos elementos extraíbles tendrán la forma de páginas sueltas arrancadas, recortes de periódicos o sobres de contenido misterioso. Disponible en la tienda a partir de Mayo.  
-            </p>
+      <!--Texto Novedades-->
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-10 novedades">
+            <div class="novedades__contenido">
+              <div class="col-12 col-md-10 novedades__contenedores">
+                <div class="novedades__novdiv">
+                  <h1 class=" novedades__titulo">Novedades</h1>
+                  <h2 class="novedades__subtitulo">MR. ROBOT COMPOSITION BOOK</h2>
+                  <p class="novedades__texto"> Se trata de una versión para los fans del diario
+                    personal de Elliot, donde el protagonista del show deja pistas para los seguidores. El material fue escrito por Sam Esmail y Courtney Looney (el creador y el guionista respectivamente).
+                    Contiene elementos que se podrán extraer del volumen para ser examinados más en profundidad por el lector,
+                    con la idea de promover la investigación y la inmersión en la historia. 
+                    Disponible en la tienda a partir de Mayo.</p>
+                </div>
+                <video class="novedades__video" src="../videos/videoMrRobot.MP4" controls></video>
+              </div>
+              <div class="col-12 col-md-10 novedades__contenedores">
+              <div class="novedades__novdiv">
+                <h2 class="novedades__subtitulo">THE ART OF VINTAGE DC COMICS</h2>
+                <p class="novedades__texto"> Esta colección de 100 postales celebra el 75 aniversario de DC  Comics.
+                  Las portadas van desde los años 30 a los 80.
+                  ¡Es perfecta para los fans de DC Comics!
+                  Son ideales para cualquier ocasión; cumpleaños, agradecimientos o simplemente decir hola.
+                  También sirven como decoración, funcionan maravillosamente como piezas de arte en miniatura. Disponible en
+                  la tienda
+                  a partir de Junio.</p>
+              </div>
+              <video class="novedades__video" src="../videos/videoDc.MP4" controls></video>
+            </div>
+            </div>
+          </div>
         </div>
-        <div class="novedades__padrev">
-            <video class="novedades__video" src="../videos/videoMrRobot.MP4" controls></video>
+      </div>
+    <!--Lectores Felices-->
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-10 lectores">
+            <h1 class=" text-center lectores__titulo">Lectores Felices</h1>
+            <div class="container lectores__padding">
+              <div class="row text-center">
+                <div class="col-xs-12 col-md-3 lectores__contenedores">
+                  <img class="lectores__imagenes" src="../imagenes/lectores/lettering.jpg" alt="Lector exhibe el libro Hand Lettering Ledger">
+                </div>
+                <div class="col-xs-12 col-md-3 lectores__contenedores">
+                  <img class="lectores__imagenes" src="../imagenes/lectores/tiny.jpg" alt="Lector exhibe el libro Tiny Book">
+                </div>
+                <div class="col-xs-12 col-md-3 lectores__contenedores">
+                  <img class="lectores__imagenes" src="../imagenes/lectores/girlboss.jpg" alt="Lector exhibe el libro Girlboss">
+                </div>
+                <div class="col-xs-12 col-md-3 lectores__contenedores">
+                  <img class="lectores__imagenes" src="../imagenes/lectores/reasons.jpg" alt="Lector exhibe el libro 13 reasons why"> 
+                </div>  
+              </div>
+          </div>
+          </div>
         </div>
-        <div class="novedades__contenedor">
-            <p class="novedades__subtitulo">THE ART OF VINTAGE DC COMICS</p>
-            <p class="novedades__texto">Esta colección de 100 postales celebra el 75 aniversario de DC Comics.
-            Las portadas van desde los años 30 a los 80.
-            ¡Es perfecta para los fans de DC Comics!
-            Son ideales para cualquier ocasión; cumpleaños, agradecimientos o simplemente decir hola.
-            También sirven como decoración, funcionan maravillosamente como piezas de arte en miniatura. Disponible en la tienda a partir de Junio.   
-            </p>
+    <!--Prensa-->
+        <div class="row d-flex justify-content-center">
+          <div class="col-8 col-md-8 col-lg-8 prensa__contenedor">
+            <div class=" text-center prensa">
+              <h2 class="prensa__titulo">Prensa</h2>
+              <a class="prensa__web" href="https://www.lanacion.com.ar/lifestyle/5-librerias-virtuales-para-comprar-online-nid2025399/" target="_blank"> <p class=" text-center prensa__links">Revista Brando</p> </a>
+              <a class="prensa__web" href="https://www.lanacion.com.ar/lifestyle/5-librerias-virtuales-para-comprar-online-nid2025399/" target="_blank"> <p class="prensa__links">Revista Ohlalá</p> </a>
+              <a class="prensa__web" href="https://www.lanacion.com.ar/lifestyle/5-librerias-virtuales-para-comprar-online-nid2025399/" target="_blank"> <p class="prensa__links">Revista Rolling Stones</p> </a>
+          </div>
+          </div>
         </div>
-        <div class="novedades__padrev">
-            <video class="novedades__video" src="../videos/videoDc.MP4" controls></video>
-        </div>
-        <div class="clientes">
-            <p class="clientes__titulo">LECTORES FELICES<br>Bookhaus <br>♥</p>
-            <img class="clientes__imagenes" src="../imagenes/clientes1.jpeg" alt="Cliente exhibe el libro Hand Lettering Ledger">
-            <img class="clientes__imagenes" src="../imagenes/clientes2.jpeg" alt="Cliente exhibe el libro Tiny Book">
-            <img class="clientes__imagenes" src="../imagenes/clientes3.jpeg" alt="Cliente exhibe el libro Girlboss">
-            <img class="clientes__imagenes" src="../imagenes/clientes4.jpeg" alt="Cliente exhibe el libro 13 reasons why">  
-        </div>
-        <div class="prensa">
-            <h1 class="prensa__titulo">PRENSA</h1>
-            <a class="prensa__web"href="https://www.lanacion.com.ar/lifestyle/5-librerias-virtuales-para-comprar-online-nid2025399/" target="_blank"> <p class="prensa__links">- Revista Brando</p> </a>
-            <a class="prensa__web" href="https://www.lanacion.com.ar/lifestyle/5-librerias-virtuales-para-comprar-online-nid2025399/" target="_blank"> <p class="prensa__links">- Revista Ohlalá</p> </a>
-            <a class="prensa__web" href="https://www.lanacion.com.ar/lifestyle/5-librerias-virtuales-para-comprar-online-nid2025399/" target="_blank"> <p class="prensa__links">- Revista Viva</p> </a>
-            <a class="prensa__web" href="https://www.lanacion.com.ar/lifestyle/5-librerias-virtuales-para-comprar-online-nid2025399/" target="_blank"> <p class="prensa__links">- Revista Rolling Stones</p> </a>
-        </div>
+      </div>
     </main>
-    <!--FOOTER-->
-    <footer class="pt-5 pt-4" id="footer">
+    <!--Footer-->
+    <footer class="pt-5 pt-4 footer">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
-          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-          <h2 id="footerTitulos">NOSOTROS</h2>
-          <p class="footerTexto">Somos una tienda online de libros en su idioma original. <br> Elegimos cada libro especialmente con amor y dedicación <br><br>♥</p>
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+          <h2 class="footerTitulos">NOSOTROS</h2>
+          <p class="text-center footerTexto">Somos una tienda online argentina de libros en su idioma original. Elegimos cada libro especialmente para vos ♥</p>
           </div>
-          <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-            <h2 id="footerTitulos">CATEGORÍAS</h2>
-            <p class="footerP"> <a href="../index.html" class="footerP style="text-decoration: none;">HOME</a> 
+          <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+            <h2 class= "footerTitulos">CATEGORÍAS</h2>
+            <p class="footerP"> <a href="../index.html" class="footerP">HOME</a> 
             </p>
-            <p class="footerP"> <a href="./catalogo.html" class="footerP style="text-decoration: none;">CATÁLOGO</a> 
+            <p class="footerP"> <a href="./catalogo.html" class="footerP">CATÁLOGO</a> 
             </p>
-            <p class="footerP"> <a href="./novedades.html" class="footerP style="text-decoration: none;">NOVEDADES</a> 
+            <p class="footerP"> <a href="./novedades.html" class="footerP">NOVEDADES</a> 
             </p>
-            <p class="footerP"> <a href="./preguntasfrecuentes.html" class="footerP" style="text-decoration: none;">PREGUNTAS FRECUENTES</a> 
+            <p class="footerP"> <a href="./preguntasfrecuentes.html" class="footerP">PREGUNTAS FRECUENTES</a> 
             </p>
-            <p class="footerP"> <a href="./contacto.html" class="footerP style="text-decoration: none;">CONTACTO</a> 
+            <p class="footerP"> <a href="./contacto.html" class="footerP">CONTACTO</a> 
             </p>
           </div>
-        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1" id="footerContenedores">
-          <h2 id="footerTitulos">CONTACTO</h2>
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-1 footerContenedores">
+          <h2 class="footerTitulos">CONTACTO</h2>
           <p class="footerTexto"> <i class="fas fa-map-marker-alt mr-3"></i>Aráoz 199 - CABA - (1414)</p>
           <p class="footerTexto"> <i class="far fa-envelope fa-fw mr-3"></i>bookhausarg@gmail.com</p>
           <p class="footerTexto"> <i class="fas fa-phone-alt fa-fw mr-3"></i>(+54 11) 4567-8908</p>
@@ -116,19 +147,19 @@
         <hr class="mb-4">
         <div class="row align-item-center">
           <div class="col-md-7 col-lg-8">
-            <p id="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
+            <p class="textoCopyright">&copy; Copyright 2021 | Todos los derechos reservados a BOOKHAUS | Diseñado por Antonela Busso</p>
           </div>
           <div class="col-md-4 col-lg-4">
             <div class="text-center text-md-right">
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
-                  <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos" class="fab fa-instagram-square fa-fw"></i></a>
+                  <a href="https://www.instagram.com/bookhaus.arg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-instagram-square fa-fw"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i  id="iconos"class="fab fa-facebook-square fa-fw" ></i></a>
+                  <a href="https://www.facebook.com/bookhausarg/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-facebook-square fa-fw" ></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm" style="font-size: 25px;"><i id="iconos"class="fab fa-twitter-square fa-fw"></i></a>
+                  <a href="https://twitter.com/" target="_blank" class="btn-floating btn-sm iconos" style="font-size: 25px;"><i class="fab fa-twitter-square fa-fw"></i></a>
                 </li>
               </ul>
             </div>
